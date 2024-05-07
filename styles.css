@@ -1,0 +1,193 @@
+body {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 180vh;
+    background-color: #181515;
+}
+
+.periodic-table {
+    display: grid;
+    grid-template-columns: repeat(18, 40px);
+    grid-template-rows: repeat(10, 40px);
+    gap: 2px;
+}
+
+
+.element {
+    width: 100%;
+    height: 100%;
+    text-decoration-line: none;
+    border: 3px solid #000000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    font-weight: 800;
+    cursor: pointer;
+    transition: background-color 0.5s;
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+/* Customize styles for each element */
+.hydrogen { grid-column: 1; grid-row: 1; background-color: blueviolet; }
+.lithium { grid-column: 1; grid-row: 2; background-color: orangered; }
+.sodium { grid-column: 1; grid-row: 3; background-color: orangered;}
+.potassium { grid-column: 1; grid-row: 4; background-color: orangered;}
+.rubidium{ grid-column: 1; grid-row: 5; background-color: orangered;}
+.caesium { grid-column: 1; grid-row: 6; background-color: orangered;}
+.francium { grid-column: 1; grid-row: 7; background-color: orangered;}
+.beryllium { grid-column: 2; grid-row: 2; background-color: yellow;}
+.magnesium { grid-column: 2; grid-row: 3; background-color: yellow;}
+.calcium { grid-column: 2; grid-row: 4; background-color: yellow;}
+.strontium { grid-column: 2; grid-row: 5; background-color: yellow;}
+.barium { grid-column: 2; grid-row: 6; background-color: yellow;}
+.radium { grid-column: 2; grid-row: 7; background-color: yellow;}
+.scandium { grid-column: 3; grid-row: 4; background-color: rgb(115, 255, 0);}
+.yttrium { grid-column: 3; grid-row: 5; background-color: rgb(115, 255, 0);}
+.lanthanide { grid-column: 3; grid-row: 6; background-color: white;}
+.actinide { grid-column: 3; grid-row: 7; background-color: white;}
+.titanium { grid-column: 4; grid-row: 4; background-color:rgb(115, 255, 0);}
+.zirconium { grid-column: 4; grid-row: 5; background-color:rgb(115, 255, 0);}
+.hafnium { grid-column: 4; grid-row: 6; background-color:rgb(115, 255, 0);}
+.rutherfordium { grid-column: 4; grid-row: 7; background-color:rgb(115, 255, 0);}
+.vanadium { grid-column: 5; grid-row: 4; background-color:rgb(115, 255, 0);}
+.niobium { grid-column: 5; grid-row: 5; background-color:rgb(115, 255, 0);}
+.tantalum { grid-column: 5; grid-row: 6; background-color:rgb(115, 255, 0);}
+.dubnium { grid-column: 5; grid-row: 7; background-color:rgb(115, 255, 0);}
+.chromium { grid-column: 6; grid-row: 4; background-color:rgb(115, 255, 0);}
+.molybdenum { grid-column: 6; grid-row: 5; background-color:rgb(115, 255, 0);}
+.tungsten { grid-column: 6; grid-row: 6; background-color:rgb(115, 255, 0);}
+.seaborgium { grid-column: 6; grid-row: 7; background-color:rgb(115, 255, 0);}
+.manganese { grid-column: 7; grid-row: 4; background-color:rgb(115, 255, 0);}
+.technetium { grid-column: 7; grid-row: 5; background-color:rgb(115, 255, 0);}
+.rhenium { grid-column: 7; grid-row: 6; background-color:rgb(115, 255, 0);}
+.bohrium { grid-column: 7; grid-row: 7; background-color:rgb(115, 255, 0);}
+.iron { grid-column: 8; grid-row: 4; background-color:rgb(115, 255, 0);}
+.ruthenium { grid-column: 8; grid-row: 5; background-color:rgb(115, 255, 0);}
+.osmium { grid-column: 8; grid-row: 6; background-color:rgb(115, 255, 0);}
+.hassium { grid-column: 8; grid-row: 7; background-color:rgb(115, 255, 0);}
+.cobalt { grid-column: 9; grid-row: 4; background-color:rgb(115, 255, 0);}
+.rhodium { grid-column: 9; grid-row: 5; background-color:rgb(115, 255, 0);}
+.iridium { grid-column: 9; grid-row: 6; background-color:rgb(115, 255, 0);}
+.meitnerium { grid-column: 9; grid-row: 7; background-color:rgb(115, 255, 0);}
+.nickel { grid-column: 10; grid-row: 4; background-color:rgb(115, 255, 0);}
+.palladium { grid-column: 10; grid-row: 5; background-color:rgb(115, 255, 0);}
+.platinum { grid-column: 10; grid-row: 6; background-color:rgb(115, 255, 0);}
+.darmstadtium { grid-column: 10; grid-row: 7; background-color:rgb(115, 255, 0);}
+.copper { grid-column: 11; grid-row: 4; background-color:rgb(115, 255, 0);}
+.silver { grid-column: 11; grid-row: 5; background-color:rgb(115, 255, 0);}
+.gold { grid-column: 11; grid-row: 6; background-color:rgb(115, 255, 0);}
+.roentgenium { grid-column: 11; grid-row: 7; background-color:rgb(115, 255, 0);}
+.zinc { grid-column: 12; grid-row: 4; background-color:rgb(115, 255, 0);}
+.cadmium { grid-column: 12; grid-row: 5; background-color:rgb(115, 255, 0);}
+.mercury { grid-column: 12; grid-row: 6; background-color:rgb(115, 255, 0);}
+.copernicium { grid-column: 12; grid-row: 7; background-color:rgb(115, 255, 0);}
+.boron { grid-column: 13; grid-row: 2; background-color:darkgoldenrod;}
+.aluminium { grid-column: 13; grid-row: 3; background-color:yellow;}
+.gallium { grid-column: 13; grid-row: 4; background-color:yellow;}
+.indium { grid-column: 13; grid-row: 5; background-color:yellow;}
+.thallium { grid-column: 13; grid-row: 6; background-color:yellow;}
+.nihonium { grid-column: 13; grid-row: 7; background-color:yellow;}
+.carbon { grid-column: 14; grid-row: 2; background-color:blueviolet;}
+.silicon { grid-column: 14; grid-row: 3; background-color:rgb(184, 134, 11);}
+.germanium { grid-column: 14; grid-row: 4; background-color:rgb(184, 134, 11);}
+.tin { grid-column: 14; grid-row: 5; background-color:yellow;}
+.lead { grid-column: 14; grid-row: 6; background-color:yellow;}
+.flerovium { grid-column: 14; grid-row: 7; background-color:yellow;}
+.nitrogen { grid-column: 15; grid-row: 2; background-color:blueviolet;}
+.phosphorus { grid-column: 15; grid-row: 3; background-color:blueviolet;}
+.arsenic { grid-column: 15; grid-row: 4; background-color:rgb(184, 134, 11);}
+.antimony { grid-column: 15; grid-row: 5; background-color:rgb(184, 134, 11);}
+.bismuth { grid-column: 15; grid-row: 6; background-color:yellow;}
+.moscovium { grid-column: 15; grid-row: 7; background-color:yellow;}
+.oxygen { grid-column: 16; grid-row: 2; background-color:blueviolet;}
+.sulfur { grid-column: 16; grid-row: 3; background-color:blueviolet;}
+.selenium { grid-column: 16; grid-row: 4; background-color:blueviolet;}
+.tellurium { grid-column: 16; grid-row: 5; background-color:blueviolet;}
+.polonium { grid-column: 16; grid-row: 6; background-color:rgb(184, 134, 11);}
+.livermorium { grid-column: 16; grid-row: 7; background-color:yellow;}
+.fluorine { grid-column: 17; grid-row: 2; background-color:rgba(222, 17, 89, 0.692);}
+.chlorine { grid-column: 17; grid-row: 3; background-color:rgba(222, 17, 89, 0.692);}
+.bromine { grid-column: 17; grid-row: 4; background-color:rgba(222, 17, 89, 0.692);}
+.iodine { grid-column: 17; grid-row: 5; background-color:rgba(222, 17, 89, 0.692);}
+.astatine { grid-column: 17; grid-row: 6; background-color:rgba(222, 17, 89, 0.692);}
+.tennessine { grid-column: 17; grid-row: 7; background-color:rgba(222, 17, 89, 0.692);}
+.helium { grid-column: 18; grid-row: 1; background-color:rgb(32, 120, 170);}
+.neon { grid-column: 18; grid-row: 2; background-color:rgb(32, 120, 170);}
+.argon { grid-column: 18; grid-row: 3; background-color:rgb(32, 120, 170);}
+.krypton { grid-column: 18; grid-row: 4; background-color:rgb(32, 120, 170);}
+.xenon { grid-column: 18; grid-row: 5; background-color:rgb(32, 120, 170);}
+.radon { grid-column: 18; grid-row: 6; background-color:rgb(32, 120, 170);}
+.oganesson { grid-column: 18; grid-row: 7; background-color:rgb(32, 120, 170);}
+.lanthanum { grid-column: 3; grid-row: 9; background-color:rgb(0, 220, 130);}
+.cerium { grid-column: 4; grid-row: 9; background-color:rgb(0, 220, 130);}
+.praseodymium { grid-column: 5; grid-row: 9; background-color:rgb(0, 220, 130);}
+.neodymium { grid-column: 6; grid-row: 9; background-color:rgb(0, 220, 130);}
+.promethium { grid-column: 7; grid-row: 9; background-color:rgb(0, 220, 130);}
+.samarium { grid-column: 8; grid-row: 9; background-color:rgb(0, 220, 130);}
+.europium { grid-column: 9; grid-row: 9; background-color:rgb(0, 220, 130);}
+.gadolinium { grid-column: 10; grid-row: 9; background-color:rgb(0, 220, 130);}
+.terbium { grid-column: 11; grid-row: 9; background-color:rgb(0, 220, 130);}
+.dysprosium { grid-column: 12; grid-row: 9; background-color:rgb(0, 220, 130);}
+.holmium { grid-column: 13; grid-row: 9; background-color:rgb(0, 220, 130);}
+.erbium { grid-column: 14; grid-row: 9; background-color:rgb(0, 220, 130);}
+.thulium { grid-column: 15; grid-row: 9; background-color:rgb(0, 220, 130);}
+.ytterbium { grid-column: 16; grid-row: 9; background-color:rgb(0, 220, 130);}
+.lutetium { grid-column: 17; grid-row: 9; background-color:rgb(0, 220, 130);}
+.actinium { grid-column: 3; grid-row: 10; background-color:green;}
+.thorium { grid-column: 4; grid-row: 10; background-color:green;}
+.protactinium { grid-column: 5; grid-row: 10; background-color:green;}
+.uranium { grid-column: 6; grid-row: 10; background-color:green;}
+.neptunium { grid-column: 7; grid-row: 10; background-color:green;}
+.plutonium { grid-column: 8; grid-row: 10; background-color:green;}
+.americium { grid-column: 9; grid-row: 10; background-color:green;}
+.curium { grid-column: 10; grid-row: 10; background-color:green;}
+.berkelium { grid-column: 11; grid-row: 10; background-color:green;}
+.californium { grid-column: 12; grid-row: 10; background-color:green;}
+.einsteinium { grid-column: 13; grid-row: 10; background-color:green;}
+.fermium { grid-column: 14; grid-row: 10; background-color:green;}
+.mendelevium { grid-column: 15; grid-row: 10; background-color:green;}
+.nobelium { grid-column: 16; grid-row: 10; background-color:green;}
+.lawrencium { grid-column: 17; grid-row: 10; background-color:green;}
+
+
+
+/* Add more element styles as needed */
+
+.element:hover {
+    background-color: #c3e6f5;
+}
+
+/* Style the tooltip */
+.element::before {
+
+    content: attr(data-info);
+    justify-content:start;
+    position: absolute;
+    top: 0%;
+    left: 100%;
+    transform: translateX(-80%);
+    background-color: #161616;
+    color: #7e82c8;
+    font-size:medium;
+    font-style: normal;
+    padding-top: 78vh;
+    padding-right: 200px;
+    border-radius: 2px;
+    opacity: 0;
+    pointer-events: auto;
+    transition: opacity 0.5s;
+}
+
+.categories__column {
+    display: flex;
+    flex-direction: column;
+}
+
+.element:hover::before {
+    opacity: 1;
+}
+
