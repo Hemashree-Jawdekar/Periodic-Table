@@ -167,15 +167,15 @@ body {
     content: attr(data-info);
     justify-content:start;
     position: absolute;
-    top: 0%;
-    left: 100%;
+    top: -75%;
+    left: 101%;
     transform: translateX(-80%);
     background-color: #161616;
     color: #7e82c8;
     font-size:medium;
     font-style: normal;
     padding-top: 78vh;
-    padding-right: 200px;
+    padding-right: 150px;
     border-radius: 2px;
     opacity: 0;
     pointer-events: auto;
